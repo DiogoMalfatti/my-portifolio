@@ -1,21 +1,8 @@
+// START CRUD
 const router = require('express').Router()
 const Portifolio = require('../models/Portifolio')
 
-router.get('/', async (req, res) => {
-  try {
-    const portifolio = await Portifolio.find()
-    res.json({
-      success: true,
-      data: portifolio,
-    })
-  } catch (err) {
-    res.json({
-      success: false,
-      message: err,
-    })
-  }
-})
-
+// START CREATE 'C'RUD
 router.post('/', async (req, res) => {
   const portifolio = new Portifolio({
     title: req.body.title,
@@ -35,5 +22,42 @@ router.post('/', async (req, res) => {
     })
   }
 })
+// END CREATE 'C'RUD
+
+// START READ C'R'UD
+//READ ALL
+router.get('/', async (req, res) => {
+  try {
+    const portifolio = await Portifolio.find()
+    res.json({
+      success: true,
+      data: portifolio,
+    })
+  } catch (err) {
+    res.json({
+      success: false,
+      message: err,
+    })
+  }
+})
+//READ ONE
+router.get('/:slug', async (req, res) => {
+  try {
+    const portifolio = await Portifolio.findOne({
+      slug: req.params.slug,
+    })
+    res.json({
+      success: true,
+      data: portifolio,
+    })
+  } catch (err) {
+    res.json({
+      success: false,
+      message: err,
+    })
+  }
+})
+// END READ C'R'UD
 
 module.exports = router
+// END CRUD
