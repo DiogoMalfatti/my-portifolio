@@ -1,3 +1,4 @@
+require('../db/mongoConnection')
 const router = require('express').Router()
 const portifolio = require('./portifolio')
 
