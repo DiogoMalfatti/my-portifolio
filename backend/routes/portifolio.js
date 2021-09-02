@@ -59,5 +59,29 @@ router.get('/:slug', async (req, res) => {
 })
 // END READ C'R'UD
 
+// START UPDATE CR'U'D
+router.patch('/:slug', async (req, res) => {
+  try {
+    let updatedPortifolio = await Portifolio.updateOne(
+      {
+        slug: req.params.slug,
+      },
+      {
+        title: req.body.title,
+        description: req.body.description,
+      },
+    )
+    res.json({
+      success: true,
+    })
+  } catch (err) {
+    res.json({
+      success: false,
+      message: err,
+    })
+  }
+})
+// END UPDATE CR'U'D
+
 module.exports = router
 // END CRUD
