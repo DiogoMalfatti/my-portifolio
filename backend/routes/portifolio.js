@@ -62,7 +62,7 @@ router.get('/:slug', async (req, res) => {
 // START UPDATE CR'U'D
 router.patch('/:slug', async (req, res) => {
   try {
-    let updatedPortifolio = await Portifolio.updateOne(
+    const updatedPortifolio = await Portifolio.updateOne(
       {
         slug: req.params.slug,
       },
@@ -73,6 +73,7 @@ router.patch('/:slug', async (req, res) => {
     )
     res.json({
       success: true,
+      updated: updatedPortifolio.modifiedCount,
     })
   } catch (err) {
     res.json({
@@ -82,6 +83,25 @@ router.patch('/:slug', async (req, res) => {
   }
 })
 // END UPDATE CR'U'D
+
+// START DELETE CRU'D'
+router.delete('/:slug', async (req, res) => {
+  try {
+    const deletedPortifolio = await Portifolio.deleteOne({
+      slug: req.params.slug,
+    })
+    res.json({
+      success: true,
+      deleted: deletedPortifolio.deletedCount,
+    })
+  } catch (err) {
+    res.json({
+      success: false,
+      message: err,
+    })
+  }
+})
+// END DELETE CRU'D'
 
 module.exports = router
 // END CRUD
