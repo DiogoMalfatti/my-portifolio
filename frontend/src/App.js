@@ -1,14 +1,10 @@
-const lerDados = () => {
-  fetch('/api').then(resultado => {
-    console.log('dados do backend', resultado)
-  })
-}
+import React from 'react'
+import Home from './pages/Home'
 
 function App() {
   return (
     <div>
-      {lerDados()}
-      Bem vindo ao Front End
+      <Home />
     </div>
   )
 }
