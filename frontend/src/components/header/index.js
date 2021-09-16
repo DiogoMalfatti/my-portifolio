@@ -1,18 +1,13 @@
 import React from 'react'
-import { NavBarWrapper } from './style'
+import { HeaderStyle } from './style'
+import Nav from './navbar'
 
-const NavBar = () => {
+const Header = () => {
   return (
-    <NavBarWrapper>
-      <img
-        src="./image/logotipo quad 101.svg"
-        width="240"
-        height="100"
-        alt=""
-      />
-      <button>X</button>
-    </NavBarWrapper>
+    <HeaderStyle>
+      <Nav />
+    </HeaderStyle>
   )
 }
 
-export default NavBar
+export default Header

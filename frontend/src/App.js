@@ -1,7 +1,7 @@
 import React from 'react'
 import { Route, BrowserRouter, Switch } from 'react-router-dom'
 import GlobalStyle from './components/globals/GlobalStyles'
-import NavBar from './components/header'
+import Header from './components/header'
 import Home from './pages/home'
 import Portifolio from './pages/portifolio'
 import Curriculo from './pages/curriculo'
@@ -11,7 +11,7 @@ function App() {
   return (
     <div>
       <GlobalStyle />
-      <NavBar />
+      <Header />
       <BrowserRouter>
         <Switch>
           <Route exact path="/">

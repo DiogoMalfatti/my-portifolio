@@ -1,55 +1,43 @@
 import { createGlobalStyle } from 'styled-components'
 
 const GlobalStyle = createGlobalStyle`
-  *{
+  /* RESET */
+  * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
   }
-  body{
-    background: #1b1b1b;
-    overflow-x: hidden;
+  a {
     text-decoration: none;
   }
-  button{
-    font-weight: bold;
-    font-size: 1.1rem;
-    cursor: pointer;
-    padding: 1rem 2rem;
-    background: transparent;
-    color: yellow;
-    border: 3px solid #416cd5;
-    transition: all 0.5s ease-in-out;
-    &:hover{
-      color: white;
-      background: yellowgreen;
-    }
+  img {
+    width: 100%;
+    height: auto;
   }
-  h2{
-    font-weight: lighter;
-    font-size: 4rem;
+  /* VARIABLES */
+  :root {
+    --color-body: #000000;
+    --color-white: #ffffff;
+    --color-blue: #00ffff;
+    --color-pink: #ff00ff;
+    --color-yellow: #ffff00;
+    --color-bar: rgba(255, 255, 255, 0.1);
   }
-  h3{
-    color: white;
+
+  /* BASE */
+  body {
+    -webkit-font-smoothing: antialiased; 
+    font: 400 1rem 'Work Sans', sans-serif;
+    background-color: var(--color-body);
   }
-  h4{
-    font-weight: bold;
-    font-size: 1.2rem;
-    color: lightgray;
+  h1 {
+    -webkit-font-smoothing: auto;
+    font: 700 1.5rem 'Space Mono', monospace;
+  }h2 {
+    -webkit-font-smoothing: auto;
+    font: 700 1rem 'Space Mono', monospace;
   }
-  a{
-    font-size: 1.1rem;
-  }
-  span{
-    font-weight: lighter;
-    color: #416cd5;
-  }
-  p{
-    padding: 1rem 1rem;
-    line-height: 150%;
-    font-size: 1.4rem;
-    color: #ccc;
-  }
+
 `
 
 export default GlobalStyle
