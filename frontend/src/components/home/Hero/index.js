@@ -4,7 +4,7 @@ import { HeroStyle } from './style'
 const HeroSection = () => {
   return (
     <HeroStyle>
-      <img src="./image/hero-sm.png" alt="" />
+      <img src="./image/hero-lg.svg" alt="" />
       <div>
         <h2>
           <span>Olá pessoAll !!</span> <br />

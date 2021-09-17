@@ -10,6 +10,9 @@ const GlobalStyle = createGlobalStyle`
   a {
     text-decoration: none;
   }
+  ul,li {
+    list-style: none;
+  }
   img {
     width: 100%;
     height: auto;
@@ -21,7 +24,10 @@ const GlobalStyle = createGlobalStyle`
     --color-blue: #00ffff;
     --color-pink: #ff00ff;
     --color-yellow: #ffff00;
-    --color-bar: rgba(255, 255, 255, 0.1);
+    --color-bar: rgba(0, 0, 0, 0.9);
+
+    --height-top: 4.5rem;
+    --height-bottom: 4.5rem;
   }
 
   /* BASE */

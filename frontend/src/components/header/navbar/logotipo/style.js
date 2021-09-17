@@ -7,7 +7,7 @@ export const LogotipoStyle = styled.div`
     margin-right: 1rem;
     width: 2.5rem;
     height: 2.5rem;
-    border-radius: 5px;
+    border-radius: 0.25rem;
     box-shadow: 0 0 20px var(--color-blue);
   }
   h1 {

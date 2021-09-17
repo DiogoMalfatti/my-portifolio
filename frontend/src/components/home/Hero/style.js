@@ -2,6 +2,7 @@ import styled from 'styled-components'
 
 export const HeroStyle = styled.section`
   margin: 0.5rem 0 0.5rem 0;
+  margin-top: var(--height-top);
   padding: 0 1rem 0 1rem;
   display: flex;
   flex-direction: column;
