@@ -43,6 +43,10 @@ const GlobalStyle = createGlobalStyle`
     -webkit-font-smoothing: auto;
     font: 700 1rem 'Space Mono', monospace;
   }
+  a {
+    -webkit-font-smoothing: auto;
+    font: 700 1rem 'Space Mono', monospace;
+  }
 
 `
 

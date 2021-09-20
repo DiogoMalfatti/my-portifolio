@@ -8,7 +8,7 @@ const HeroSection = () => {
       <div>
         <h2>
           <span>Olá pessoAll !!</span> <br />
-          <span>meu nome é</span> Diogo Malfatti <br />
+          <span>Meu nome é</span> Diogo Malfatti <br />
           <span>eu sou</span> Dev. Front End . <br />
           <span>Sejam bem vindos ao meu</span> <br />
           Portifólio .

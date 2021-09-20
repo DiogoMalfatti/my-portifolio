@@ -1,10 +1,15 @@
 import React from 'react'
 import { MenuStyle, MenuNav, MenuButton } from './style'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faBars, faTimes } from '@fortawesome/free-solid-svg-icons'
 
 const Menu = () => {
+  const [openMenu, setOpenMenu] = React.useState(false)
+  const handleClick = () => setOpenMenu(!openMenu)
+
   return (
     <MenuStyle>
-      <MenuNav>
+      <MenuNav className={openMenu !== true ? 'hidden' : 'show'}>
         <ul>
           <li>
             <a href="/">Início</a>
@@ -20,7 +25,13 @@ const Menu = () => {
           </li>
         </ul>
       </MenuNav>
-      <MenuButton></MenuButton>
+      <MenuButton onClick={handleClick}>
+        {openMenu !== true ? (
+          <FontAwesomeIcon icon={faBars} size="1x" />
+        ) : (
+          <FontAwesomeIcon icon={faTimes} size="1x" />
+        )}
+      </MenuButton>
     </MenuStyle>
   )
 }
