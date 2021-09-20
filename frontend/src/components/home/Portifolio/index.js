@@ -1,6 +1,7 @@
 import React from 'react'
-import { PortifolioStyle, Text } from './style'
-import { SubTitleStyle } from '../../subtitle/style'
+import { PortifolioStyle } from './style'
+import { SubTitleStyle } from '../../subtitleStyle/style'
+import { TextStyle } from '../../text/style'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faLaptopCode } from '@fortawesome/free-solid-svg-icons'
 
@@ -11,7 +12,7 @@ const PortifolioSection = () => {
         <FontAwesomeIcon icon={faLaptopCode} size="2x" />
         <h2>Portifólio</h2>
       </SubTitleStyle>
-      <Text>
+      <TextStyle>
         <p>
           Na seção Portifólio você vai encontar os projetos que criei e
           trabalhos que participei bem como as linguagens, bibliotecas e
@@ -28,12 +29,12 @@ const PortifolioSection = () => {
           um vídeo comentando sobre o projeto.
         </p>
         <br />
-        <h1>card destaque</h1>
-        <br />
-        <h1>cards</h1>
-        <br />
-        <h1>button portifolio</h1>
-      </Text>
+      </TextStyle>
+      <h1>card destaque</h1>
+      <br />
+      <h1>cards</h1>
+      <br />
+      <h1>button portifolio</h1>
     </PortifolioStyle>
   )
 }
