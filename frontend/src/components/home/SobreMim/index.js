@@ -1,7 +1,8 @@
 import React from 'react'
 import { SobreMimStyle } from './style'
-import { SubTitleStyle } from '../../subtitleStyle/style'
-import { TextStyle } from '../../text/style'
+import { SubTitleStyle } from '../../subtitleSection/style'
+import { TextStyle } from '../../textSection/style'
+import { ButtonStyle } from '../../buttonSection/style'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faUser } from '@fortawesome/free-regular-svg-icons'
 
@@ -26,6 +27,9 @@ const SobreMimSection = () => {
         <p>E claro um pouquinho de mim sem uniforme.</p>
         <br />
       </TextStyle>
+      <ButtonStyle>
+        <a href="/sobremim">Sobre Mim</a>
+      </ButtonStyle>
     </SobreMimStyle>
   )
 }

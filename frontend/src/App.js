@@ -6,6 +6,7 @@ import Home from './pages/home'
 import Portifolio from './pages/portifolio'
 import Curriculo from './pages/curriculo'
 import SobreMim from './pages/sobremim'
+import Footer from './components/footer'
 
 function App() {
   return (
@@ -28,6 +29,7 @@ function App() {
           </Route>
         </Switch>
       </BrowserRouter>
+      <Footer />
     </div>
   )
 }

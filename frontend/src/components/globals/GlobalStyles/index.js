@@ -28,6 +28,9 @@ const GlobalStyle = createGlobalStyle`
 
     --height-top: 4.5rem;
     --height-bottom: 4.5rem;
+
+    --font-title: 'Space Mono', monospace;
+    --font-text: 'Work Sans', sans-serif;
   }
 
   /* BASE */

@@ -1,7 +1,8 @@
 import React from 'react'
 import { PortifolioStyle } from './style'
-import { SubTitleStyle } from '../../subtitleStyle/style'
-import { TextStyle } from '../../text/style'
+import { SubTitleStyle } from '../../subtitleSection/style'
+import { TextStyle } from '../../textSection/style'
+import { ButtonStyle } from '../../buttonSection/style'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faLaptopCode } from '@fortawesome/free-solid-svg-icons'
 
@@ -30,11 +31,9 @@ const PortifolioSection = () => {
         </p>
         <br />
       </TextStyle>
-      <h1>card destaque</h1>
-      <br />
-      <h1>cards</h1>
-      <br />
-      <h1>button portifolio</h1>
+      <ButtonStyle>
+        <a href="/portifolio">Portifólio</a>
+      </ButtonStyle>
     </PortifolioStyle>
   )
 }

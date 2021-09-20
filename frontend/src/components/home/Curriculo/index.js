@@ -1,7 +1,8 @@
 import React from 'react'
 import { CurriculoStyle } from './style'
-import { SubTitleStyle } from '../../subtitleStyle/style'
-import { TextStyle } from '../../text/style'
+import { SubTitleStyle } from '../../subtitleSection/style'
+import { TextStyle } from '../../textSection/style'
+import { ButtonStyle } from '../../buttonSection/style'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faIdCard } from '@fortawesome/free-regular-svg-icons'
 
@@ -25,6 +26,9 @@ const CurriculoSection = () => {
         </p>
         <br />
       </TextStyle>
+      <ButtonStyle>
+        <a href="/curriculo">Curriculo</a>
+      </ButtonStyle>
     </CurriculoStyle>
   )
 }
