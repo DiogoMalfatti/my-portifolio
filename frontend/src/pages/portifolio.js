@@ -1,7 +1,12 @@
 import React from 'react'
+import HeroSection from '../components/01portifolio/Hero'
 
 const Portifolio = () => {
-  return <div>Portifolio</div>
+  return (
+    <div>
+      <HeroSection />
+    </div>
+  )
 }
 
 export default Portifolio

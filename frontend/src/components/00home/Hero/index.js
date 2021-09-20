@@ -1,11 +1,13 @@
 import React from 'react'
-import { HeroStyle } from './style'
+import { HeroStyle } from '../../hero/style'
+import HeroImage from '../../hero/heroImage'
+import { HeroDiv } from './style'
 
 const HeroSection = () => {
   return (
     <HeroStyle>
-      <img src="./image/hero-lg.svg" alt="" />
-      <div>
+      <HeroImage />
+      <HeroDiv>
         <h2>
           <span>Olá pessoAll !!</span> <br />
           <span>Meu nome é</span> Diogo Malfatti <br />
@@ -13,7 +15,7 @@ const HeroSection = () => {
           <span>Sejam bem vindos ao meu</span> <br />
           Portifólio .
         </h2>
-      </div>
+      </HeroDiv>
     </HeroStyle>
   )
 }

@@ -1,12 +1,12 @@
 import React from 'react'
 import { Route, BrowserRouter, Switch } from 'react-router-dom'
-import GlobalStyle from './components/globals/GlobalStyles'
-import Header from './components/header'
+import GlobalStyle from './components/04globals/GlobalStyles'
+import Header from './components/05header'
 import Home from './pages/home'
 import Portifolio from './pages/portifolio'
 import Curriculo from './pages/curriculo'
 import SobreMim from './pages/sobremim'
-import Footer from './components/footer'
+import Footer from './components/06footer'
 
 function App() {
   return (
