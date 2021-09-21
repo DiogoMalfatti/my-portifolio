@@ -8,8 +8,9 @@ export const MenuStyle = styled.div`
 export const MenuNav = styled.div`
   /* ul , li */
   &.hidden {
-    opacity: 0;
+    display: none;
     visibility: hidden;
+    opacity: 0;
   }
   &.show {
     position: fixed;

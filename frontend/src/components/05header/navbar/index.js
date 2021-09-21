@@ -1,12 +1,12 @@
 import React from 'react'
 import { NavStyle } from './style'
-import Logotipo from '../navbar/logotipo'
+import LogoMD from '../../logoMD'
 import Menu from '../navbar/menu'
 
 const Nav = () => {
   return (
     <NavStyle>
-      <Logotipo />
+      <LogoMD />
       <Menu />
     </NavStyle>
   )
