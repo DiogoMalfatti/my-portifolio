@@ -1,5 +1,5 @@
 import React from 'react'
-import { Route, BrowserRouter, Switch } from 'react-router-dom'
+import { Route, Switch } from 'react-router-dom'
 import GlobalStyle from './components/04globals/GlobalStyles'
 import Header from './components/05header'
 import Home from './pages/home'
@@ -13,22 +13,20 @@ function App() {
     <div>
       <GlobalStyle />
       <Header />
-      <BrowserRouter>
-        <Switch>
-          <Route exact path="/">
-            <Home />
-          </Route>
-          <Route path="/portifolio">
-            <Portifolio />
-          </Route>
-          <Route path="/curriculo">
-            <Curriculo />
-          </Route>
-          <Route path="/sobremim">
-            <SobreMim />
-          </Route>
-        </Switch>
-      </BrowserRouter>
+      <Switch>
+        <Route exact path="/">
+          <Home />
+        </Route>
+        <Route path="/portifolio">
+          <Portifolio />
+        </Route>
+        <Route path="/curriculo">
+          <Curriculo />
+        </Route>
+        <Route path="/sobremim">
+          <SobreMim />
+        </Route>
+      </Switch>
       {/* <Footer /> */}
     </div>
   )

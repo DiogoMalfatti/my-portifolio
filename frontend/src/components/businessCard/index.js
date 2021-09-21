@@ -11,13 +11,17 @@ const BusinessCard = () => {
     <BusinessCardStyle>
       <LogoMD />
       <IconsList>
-        <a href="/https://www.linkedin.com/in/diogomalfatti/">
+        <a href="/https://www.linkedin.com/in/diogomalfatti/" target="_blank">
           <FontAwesomeIcon icon={faLinkedin} size="1.5x" />
         </a>
-        <a href="https://github.com/DiogoMalfatti">
+        <a
+          href="https://github.com/DiogoMalfatti"
+          target="_blank"
+          rel="noreferrer"
+        >
           <FontAwesomeIcon icon={faGithub} />
         </a>
-        <a href="http://localhost:3000">
+        <a href="http://localhost:3000" target="_blank" rel="noreferrer">
           <FontAwesomeIcon icon={faGlobe} />
         </a>
       </IconsList>
