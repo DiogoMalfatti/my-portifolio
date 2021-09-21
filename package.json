@@ -5,8 +5,9 @@
   "main": "server.js",
   "scripts": {
     "start": "node server.js",
+    "heroku-posbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix frontend && npm run build --prefix frontend",
     "backend": "nodemon server.js",
-    "frontend": "cd frontend && npm start",
+    "frontend": "npm start --prefix frontend",
     "dev": "concurrently \"npm run backend\" \"npm run frontend\" ",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
