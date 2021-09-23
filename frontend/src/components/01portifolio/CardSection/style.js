@@ -21,16 +21,18 @@ export const CardStyle = styled.div`
   margin: 1rem 0 1rem 0;
   padding: 0.5rem;
   border-radius: 0.25rem;
-  /* max-width: 21.875rem; //350px
-  min-height: 32.8125rem; //525px */
+  width: 22.875rem; //350px
+  height: 32.8125rem; //525px
 `
 
 export const CardImage = styled.div`
   /* background: var(--color-blue); */
   img {
     border-radius: 0.25rem;
-    width: 18.75rem; //300px
-    height: 12.5rem; //200px
+    max-width: 21.875rem; //350px
+    height: 12.5rem; //525px
+    /* width: 18.75rem; //300px
+    height: 12.5rem; //200px */
   }
 `
 
@@ -42,6 +44,6 @@ export const CardInfo = styled.div`
   display: flex;
   flex-direction: column;
   text-align: left;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   overflow: hidden;
 `
