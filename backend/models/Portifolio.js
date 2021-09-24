@@ -3,9 +3,34 @@ const slug = require('slug')
 
 const { Schema } = mongoose
 const portifolioSchema = new Schema({
+  image: {
+    type: String,
+    required: true,
+    unique: true,
+  },
   title: {
     type: String,
     required: true,
+    unique: true,
+  },
+  createdAt: {
+    type: Date,
+    default: Date.now(),
+  },
+  description: {
+    type: String,
+    required: true,
+  },
+  linkGlobe: {
+    type: String,
+    unique: true,
+  },
+  linkGithub: {
+    type: String,
+    unique: true,
+  },
+  linkYoutube: {
+    type: String,
     unique: true,
   },
   slug: {
@@ -15,14 +40,6 @@ const portifolioSchema = new Schema({
     default: function () {
       return slug(this.title)
     },
-  },
-  description: {
-    type: String,
-    required: true,
-  },
-  createdAt: {
-    type: Date,
-    default: Date.now(),
   },
 })
 

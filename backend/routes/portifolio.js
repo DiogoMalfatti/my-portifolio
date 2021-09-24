@@ -5,8 +5,12 @@ const Portifolio = require('../models/Portifolio')
 // START CREATE 'C'RUD
 router.post('/', async (req, res) => {
   const portifolio = new Portifolio({
+    image: req.body.image,
     title: req.body.title,
     description: req.body.description,
+    linkGlobe: req.body.linkGlobe,
+    linkGithub: req.body.linkGithub,
+    linkYoutube: req.body.linkYoutube,
   })
 
   try {
@@ -67,8 +71,12 @@ router.patch('/:slug', async (req, res) => {
         slug: req.params.slug,
       },
       {
+        image: req.body.image,
         title: req.body.title,
         description: req.body.description,
+        linkGlobe: req.body.linkGlobe,
+        linkGithub: req.body.linkGithub,
+        linkYoutube: req.body.linkYoutube,
       },
     )
     res.json({

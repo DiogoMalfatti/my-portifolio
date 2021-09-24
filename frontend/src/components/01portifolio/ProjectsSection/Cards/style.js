@@ -7,6 +7,4 @@ export const CardsStyle = styled.div`
   flex-wrap: wrap;
   justify-content: center;
   margin: 2rem 0 2rem 0;
-
-  color: #fff; //temporario
 `

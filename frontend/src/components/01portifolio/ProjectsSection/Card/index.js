@@ -1,4 +1,5 @@
 import React from 'react'
+import moment from 'moment'
 import {
   CardStyle,
   CardImage,
@@ -15,24 +16,24 @@ const Card = ({ project }) => {
   return (
     <CardStyle>
       <CardImage>
-        <img src="./card07.png" alt="" />
+        <img src={project.image} alt="" />
       </CardImage>
       <CardInfos>
         <CardInfoTitle>
           <h4>{project.title}</h4>
-          <h5>{project.createdAt}</h5>
+          <h5>{moment(project.createdAt).format('MMM YYYY')}</h5>
         </CardInfoTitle>
         <CardInfoDescription>
           <p>{project.description}</p>
         </CardInfoDescription>
         <CardInfoIconLink>
-          <a href="/https://www.linkedin.com/in/diogomalfatti/" target="_blank">
+          <a href={project.linkGlobe} target="_blank" rel="noreferrer">
             <FontAwesomeIcon icon={faGlobe} size="2x" />
           </a>
-          <a href="/https://www.linkedin.com/in/diogomalfatti/" target="_blank">
+          <a href={project.linkGithub} target="_blank" rel="noreferrer">
             <FontAwesomeIcon icon={faGithub} size="2x" />
           </a>
-          <a href="/https://www.linkedin.com/in/diogomalfatti/" target="_blank">
+          <a href={project.linkYoutube} target="_blank" rel="noreferrer">
             <FontAwesomeIcon icon={faYoutube} size="2x" />
           </a>
         </CardInfoIconLink>

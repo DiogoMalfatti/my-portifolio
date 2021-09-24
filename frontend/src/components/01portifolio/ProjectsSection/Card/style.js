@@ -8,6 +8,7 @@ export const CardStyle = styled.div`
   padding: 0.5rem;
   border: 0.25px solid var(--color-blue);
   border-radius: 0.25rem;
+  box-shadow: 0 0 10px var(--color-blue);
 `
 
 export const CardImage = styled.div`
