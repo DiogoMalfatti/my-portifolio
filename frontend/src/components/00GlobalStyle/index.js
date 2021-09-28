@@ -52,11 +52,21 @@ const GlobalStyle = createGlobalStyle`
     color: var(---color-blue);
     margin-left: 1rem;
   }
+  h4 {
+    color: var(--color-blue);
+    -webkit-font-smoothing: auto;
+    font: 400 1rem 'Space Mono', monospace;
+  }
   a {
     -webkit-font-smoothing: auto;
     font: 700 1rem 'Space Mono', monospace;
   }
   p {
+    color: var(--color-white);
+    -webkit-font-smoothing: auto;
+    font: 400 1rem 'Work Sans', sans-serif;
+  }
+  span {
     color: var(--color-white);
     -webkit-font-smoothing: auto;
     font: 400 1rem 'Work Sans', sans-serif;
@@ -67,7 +77,13 @@ const GlobalStyle = createGlobalStyle`
       font: 700 1.75rem 'Space Mono', monospace;
       margin-left: 1.25rem;
     }
+    h4 {
+      font: 400 1.25rem 'Space Mono', monospace;
+    }
     p {
+      font: 400 1.25rem 'Work Sans', sans-serif;
+    }
+    span {
       font: 400 1.25rem 'Work Sans', sans-serif;
     }
   }
@@ -77,7 +93,13 @@ const GlobalStyle = createGlobalStyle`
       font: 700 2rem 'Space Mono', monospace;
       margin-left: 1.5rem;
     }
+    h4 {
+      font: 400 1.5rem 'Space Mono', monospace;
+    }
     p {
+      font: 400 1.5rem 'Work Sans', sans-serif;
+    }
+    span {
       font: 400 1.5rem 'Work Sans', sans-serif;
     }
   }
@@ -87,7 +109,13 @@ const GlobalStyle = createGlobalStyle`
       font: 700 2rem 'Space Mono', monospace;
       margin-left: 1.5rem;
     }
+    h4 {
+      font: 400 1.5rem 'Space Mono', monospace;
+    }
     p {
+      font: 400 1.5rem 'Work Sans', sans-serif;
+    }
+    span {
       font: 400 1.5rem 'Work Sans', sans-serif;
     }
   }

@@ -11,7 +11,6 @@ export const BusinessCardStyle = styled.div`
   }
   /* NOTEBOOK */
   @media (min-width: 1365px) {
-    order: 1;
     margin: 2rem;
   }
   /* DESKTOP */

@@ -1,9 +1,9 @@
 import React from 'react'
 import styled from 'styled-components'
-import Section from '../../Layout/Section'
+
+import SectionReverse from '../../Layout/SectionReverse'
 import SectionLeft from '../../Layout/Section/SectionLeft'
 import SectionRight from '../../Layout/Section/SectionRight'
-
 import Paragraphs from '../../Texts/Paragraphs'
 
 import { SubTitleStyle } from '../../subtitleSection/style'
@@ -14,7 +14,7 @@ import { faUser } from '@fortawesome/free-regular-svg-icons'
 const SobreMimSection = () => {
   return (
     <SobreMimStyle>
-      <Section>
+      <SectionReverse>
         <SectionLeft>
           <SubTitleStyle>
             <FontAwesomeIcon icon={faUser} size="2x" />
@@ -39,14 +39,13 @@ const SobreMimSection = () => {
           </ButtonStyle>
         </SectionLeft>
         <SectionRight></SectionRight>
-      </Section>
+      </SectionReverse>
     </SobreMimStyle>
   )
 }
 
 const SobreMimStyle = styled.section`
   margin-bottom: var(--height-bottom);
-  color: #fff; //Retirar de todos
 `
 
 export default SobreMimSection

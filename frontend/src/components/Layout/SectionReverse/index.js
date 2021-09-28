@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-const Section = styled.section`
+const SectionReverse = styled.section`
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr 1fr;
@@ -17,11 +17,11 @@ const Section = styled.section`
     display: grid;
     grid-template-rows: 1fr;
     grid-template-columns: 1fr 1fr;
-    grid-template-areas: 'sectionLeft sectionRight';
+    grid-template-areas: 'sectionRight sectionLeft';
   }
   /* DESKTOP */
   @media (min-width: 1919px) {
   }
 `
 
-export default Section
+export default SectionReverse
