@@ -30,4 +30,15 @@ export const LogoMDStyle = styled.div`
     letter-spacing: 0.25rem;
     color: var(--color-blue);
   }
+  /* TABLET */
+  @media (min-width: 767px) {
+  }
+  /* NOTEBOOK */
+  @media (min-width: 1365px) {
+    img {
+    }
+  }
+  /* DESKTOP */
+  @media (min-width: 1919px) {
+  }
 `

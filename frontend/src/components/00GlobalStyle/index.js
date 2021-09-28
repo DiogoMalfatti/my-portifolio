@@ -46,11 +46,51 @@ const GlobalStyle = createGlobalStyle`
     -webkit-font-smoothing: auto;
     font: 700 1rem 'Space Mono', monospace;
   }
+  h3 {
+    -webkit-font-smoothing: auto;
+    font: 700 1.5rem 'Space Mono', monospace; 
+    color: var(---color-blue);
+    margin-left: 1rem;
+  }
   a {
     -webkit-font-smoothing: auto;
     font: 700 1rem 'Space Mono', monospace;
   }
-
+  p {
+    color: var(--color-white);
+    -webkit-font-smoothing: auto;
+    font: 400 1rem 'Work Sans', sans-serif;
+  }
+  /* TABLET */
+  @media (min-width: 767px) {
+    h3 {
+      font: 700 1.75rem 'Space Mono', monospace;
+      margin-left: 1.25rem;
+    }
+    p {
+      font: 400 1.25rem 'Work Sans', sans-serif;
+    }
+  }
+  /* NOTEBOOK */
+  @media (min-width: 1365px) {
+    h3 {
+      font: 700 2rem 'Space Mono', monospace;
+      margin-left: 1.5rem;
+    }
+    p {
+      font: 400 1.5rem 'Work Sans', sans-serif;
+    }
+  }
+  /* DESKTOP */
+  @media (min-width: 1919px) {
+    h3 {
+      font: 700 2rem 'Space Mono', monospace;
+      margin-left: 1.5rem;
+    }
+    p {
+      font: 400 1.5rem 'Work Sans', sans-serif;
+    }
+  }
 `
 
 export default GlobalStyle

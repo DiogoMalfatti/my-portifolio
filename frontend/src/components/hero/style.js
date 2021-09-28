@@ -10,4 +10,18 @@ export const HeroStyle = styled.section`
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  /* TABLET */
+  @media (min-width: 767px) {
+  }
+  /* NOTEBOOK */
+  @media (min-width: 1365px) {
+    margin: 0.5rem 0 0.5rem 0;
+    padding: 0 3rem 0 3rem;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: var(--height-top);
+  }
+  /* DESKTOP */
+  @media (min-width: 1919px) {
+  }
 `

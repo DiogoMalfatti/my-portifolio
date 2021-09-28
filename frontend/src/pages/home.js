@@ -1,4 +1,5 @@
 import React from 'react'
+import Layout from '../components/Layout'
 import Divider from '../components/07divider'
 import HeroSection from '../components/00home/Hero'
 import PortifolioSection from '../components/00home/Portifolio'
@@ -8,13 +9,21 @@ import SobreMimSection from '../components/00home/SobreMim'
 const Home = () => {
   return (
     <div>
-      <HeroSection />
+      <Layout>
+        <HeroSection />
+      </Layout>
       <Divider />
-      <PortifolioSection />
+      <Layout>
+        <PortifolioSection />
+      </Layout>
       <Divider />
-      <CurriculoSection />
+      <Layout>
+        <CurriculoSection />
+      </Layout>
       <Divider />
-      <SobreMimSection />
+      <Layout>
+        <SobreMimSection />
+      </Layout>
     </div>
   )
 }

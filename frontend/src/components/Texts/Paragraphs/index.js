@@ -1,9 +1,8 @@
 import styled from 'styled-components'
 
-export const TextStyle = styled.div`
+const Paragraphs = styled.div`
   margin-top: var(--height-top);
   margin-bottom: var(--height-bottom);
-  p {
-    color: var(--color-white);
-  }
 `
+
+export default Paragraphs
