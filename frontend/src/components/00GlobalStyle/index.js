@@ -122,3 +122,14 @@ const GlobalStyle = createGlobalStyle`
 `
 
 export default GlobalStyle
+
+// /* TABLET */
+// @media (min-width: 767px) {
+// }
+// /* NOTEBOOK */
+// @media (min-width: 1365px) {
+
+// }
+// /* DESKTOP */
+// @media (min-width: 1919px) {
+// }
