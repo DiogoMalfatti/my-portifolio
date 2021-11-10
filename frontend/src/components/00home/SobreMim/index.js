@@ -9,7 +9,13 @@ import Paragraphs from '../../Texts/Paragraphs'
 import { SubTitleStyle } from '../../subtitleSection/style'
 import { ButtonStyle } from '../../buttonSection/style'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faUser } from '@fortawesome/free-regular-svg-icons'
+import { faHeart, faSmile, faUser } from '@fortawesome/free-regular-svg-icons'
+import { faBrain } from '@fortawesome/free-solid-svg-icons'
+import {
+  faDailymotion,
+  faGithubAlt,
+  faLinkedinIn,
+} from '@fortawesome/free-brands-svg-icons'
 
 const SobreMimSection = () => {
   return (

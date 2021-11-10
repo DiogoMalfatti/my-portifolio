@@ -9,7 +9,14 @@ import Paragraphs from '../../Texts/Paragraphs'
 import { SubTitleStyle } from '../../subtitleSection/style'
 import { ButtonStyle } from '../../buttonSection/style'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faIdCard } from '@fortawesome/free-regular-svg-icons'
+import { faFilePdf, faIdCard } from '@fortawesome/free-regular-svg-icons'
+import {
+  faCloudDownloadAlt,
+  faDownload,
+  faGraduationCap,
+  faUserGraduate,
+} from '@fortawesome/free-solid-svg-icons'
+import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'
 
 const CurriculoSection = () => {
   return (
@@ -37,12 +44,28 @@ const CurriculoSection = () => {
             <a href="/curriculo">Curriculo</a>
           </ButtonStyle>
         </SectionLeft>
-        <SectionRight></SectionRight>
+        <SectionRight>
+          <Container>
+            <img src="./cv.png" alt="" />
+          </Container>
+        </SectionRight>
       </Section>
     </CurriculoStyle>
   )
 }
 
 const CurriculoStyle = styled.section``
+
+const Container = styled.div`
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  img {
+    width: 75%;
+    height: 75%;
+  }
+`
 
 export default CurriculoSection

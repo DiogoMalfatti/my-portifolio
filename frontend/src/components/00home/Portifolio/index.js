@@ -11,6 +11,8 @@ import { ButtonStyle } from '../../buttonSection/style'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faLaptopCode } from '@fortawesome/free-solid-svg-icons'
 
+import Carroussel from '../Portifolio/carousel'
+
 const PortifolioSection = () => {
   return (
     <PortifolioStyle>
@@ -43,7 +45,7 @@ const PortifolioSection = () => {
           </ButtonStyle>
         </SectionLeft>
         <SectionRight>
-          {/* <img src="./image/hero-lg.svg" alt="" /> */}
+          <Carroussel />
         </SectionRight>
       </SectionReverse>
     </PortifolioStyle>
