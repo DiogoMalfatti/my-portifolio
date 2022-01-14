@@ -19,8 +19,10 @@ const HeroSection = () => {
               <WelcomeCard>
                 <h4>
                   <span>Olá pessoAll !!</span> <br />
-                  <span>Meu nome é</span> Diogo Malfatti <br />
-                  <span>eu sou</span> Desenvolvedor Web <br />
+                  <span>Meu nome é</span> <br />
+                  Diogo Malfatti <br />
+                  <span>eu sou</span> <br />
+                  Dev. Front End | Instrutor <br />
                   <span>Sejam bem vindos ao meu</span> <br />
                   Portifólio <span>.</span>
                 </h4>

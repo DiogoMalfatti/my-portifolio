@@ -46,7 +46,7 @@ const CurriculoSection = () => {
         </SectionLeft>
         <SectionRight>
           <Container>
-            <img src="./cv.png" alt="" />
+            <img src="./tecladoCV.jpg" alt="" />
           </Container>
         </SectionRight>
       </Section>
@@ -63,8 +63,11 @@ const Container = styled.div`
   justify-content: center;
   align-items: center;
   img {
-    width: 75%;
-    height: 75%;
+    border-radius: 0.5rem;
+    border: 2px solid white;
+    box-shadow: 0 0 20px var(--color-blue);
+    width: 500px;
+    height: 400px;
   }
 `
 
